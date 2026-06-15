@@ -4,5 +4,5 @@ Welcome to my repository tracking my progress through the software engineering r
 
 ## 📚 Courses Index
 
-* 📂 **Algorithms & Problem-Solving – Level 2**
+* 📂 **Course 5 - Algorithms & Problem-Solving – Level 2**
   * 🎮 [Stone-Paper-Scissors Game](./Algorithms%20&%20Problem-Solving%20%E2%80%93%20Level%202/Stone-Paper-Scissors/Stone%20-%20Paper%20-%20Scissor)
