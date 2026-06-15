@@ -17,5 +17,5 @@ A console-based Rock-Paper-Scissors game built in C++. This project demonstrates
 ## 📐 Game Design & Logic Architecture
 The diagram below illustrates the detailed logic flow, requirements, and how enums/structs are structured across the game:
 
-![Game Design Layout](Stone-Paper-Scissors Project - Game Design Layout.png)---
+![Game Design Layout](./Stone%20-%20Paper%20-%20Scissor/Stone-Paper-Scissors%20Project%20-%20Game%20Design%20Layout.png)
 *Part of my programming learning journey.*
