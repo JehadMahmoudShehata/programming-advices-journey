@@ -20,4 +20,4 @@ The diagram below illustrates the detailed logic flow, requirements, and how enu
 ![Game Design Layout](./Stone%20-%20Paper%20-%20Scissor/Stone-Paper-Scissors%20Project%20-%20Game%20Design%20Layout.png)
 
 
-_Figure: Detailed logic flow, architectural requirements, and structural enum/struct mapping for the Rock-Paper-Scissors game._
+_Figure: Detailed logic flow, architectural requirements, and structural enum/struct mapping for the Stone-Paper-Scissors game._
