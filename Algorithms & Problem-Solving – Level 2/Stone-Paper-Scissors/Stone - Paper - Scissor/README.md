@@ -1,4 +1,4 @@
-# 🎮 Rock-Paper-Scissors Game
+# 🎮 stone-Paper-Scissors Game
 
 A console-based Rock-Paper-Scissors game built in C++. This project demonstrates clean code practices, modular programming, and structural logic separating game configurations from execution.
 
@@ -17,7 +17,7 @@ A console-based Rock-Paper-Scissors game built in C++. This project demonstrates
 ## 📐 Game Design & Logic Architecture
 The diagram below illustrates the detailed logic flow, requirements, and how enums/structs are structured across the game:
 
-![Game Design Layout](Stone-Paper-Scissors Project - Game Design Layout.png)
+![Game Design Layout](./Stone%20-%20Paper%20-%20Scissor/Stone-Paper-Scissors%20Project%20-%20Game%20Design%20Layout.png)
 
----
-*Part of my programming learning journey.*
+
+_Figure: Detailed logic flow, architectural requirements, and structural enum/struct mapping for the Stone-Paper-Scissors game._
