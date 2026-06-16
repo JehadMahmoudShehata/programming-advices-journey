@@ -4,7 +4,8 @@ Welcome to my repository tracking my progress through the software engineering r
 
 ## 🗺️ Engineering Roadmap
 
-![Programming Advices RoadMap](./ProgrammingAdvices%20-%20RoadMap.jpg)
+![Programming Advices RoadMap](./ProgrammingAdvices%20-%20RoadMap.png)
+
 
 ## 📚 Courses Index
 
