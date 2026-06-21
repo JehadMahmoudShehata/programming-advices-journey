@@ -18,4 +18,4 @@ A console-based Math Quiz game built in C++. This project challenges players wit
 ## 📐 Game Design & Layout
 Below is the architectural layout and requirements logic used to construct the game:
 
-![Math Quiz Layout](./Math_Game_Quiz%20Project%20-%20Game%20Design%20Layout.PNG)
+![Math Quiz Layout](./Math_Game_Quiz%20Project%20-%20Game%20Design%20Layout.png)
