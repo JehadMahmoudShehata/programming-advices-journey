@@ -27,6 +27,6 @@ A console-based Banking Management System built in C++. This project focuses on 
 
 ## 📐 Game Design & Layout
 
-Below is the architectural layout and requirements logic used to construct the game:
+Below is the architectural layout and requirements logic used to construct the System:
 
 ![System Layout](./Bank1_Project%20-%20Design%20Layout.png)
