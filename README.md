@@ -16,3 +16,6 @@ Welcome to my repository tracking my progress through the software engineering r
 * 📂 **Course 7 - Algorithms & Problem-Solving – Level 3**
   * 🏦 [Bank System - Core Project](./Course%207%20-%20Algorithms%20%26%20Problem-Solving%20%E2%80%93%20Level%203/Bank_1)
   * 🚀 [Bank System - Extension Project](./Course%207%20-%20Algorithms%20%26%20Problem-Solving%20%E2%80%93%20Level%203/Bank_Extension)
+
+* 📂 **Course 8 - Algorithms & Problem-Solving – Level 4**
+  * 🏧 [ATM System](./Course%208%20-%20Algorithms%20%26%20Problem-Solving%20%E2%80%93%20Level%204/ATM%20System)
