@@ -21,7 +21,7 @@ A secure, console-based ATM Simulation System built in C++. This project provide
   * Enums (`enMainMenueOptions`) for clean, type-safe navigation of the ATM dashboard.
   * Structs (`sClient`) to bundle current client credentials, balances, and global state management.
 * **Logic & Control:** Active validation loops (checking for positive deposits and multiples of 5), token-based string parsing, reference passing (`&`) for real-time memory mutations, and terminal clean-ups.
-* **Data Persistence (File Handling):** Full live synchronization with a shared local database (`Clients.txt`) using file streams (`fstream`) to persistently commit financial transactions across login sessions.
+* **Data Persistence (File Handling):** Full live synchronization with a local database file (`Clients.txt`) using file streams (`fstream`) to persistently commit financial transactions across login sessions.
 
 ---
 
