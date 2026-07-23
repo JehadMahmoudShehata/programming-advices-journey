@@ -1,6 +1,21 @@
+# Visual Studio Auto-Generated & Build Output
 .vs/
+bin/
+obj/
 x64/
-*.vcxproj.filters
+x86/
+Debug/
+Release/
+
+# User-specific files
 *.vcxproj.user
-*.sln
-*.vcxproj
+*.vcxproj.aps
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+
+# Executables
+*.exe
+*.out
+*.app

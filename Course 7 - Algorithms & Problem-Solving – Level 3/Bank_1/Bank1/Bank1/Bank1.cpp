@@ -321,7 +321,7 @@ void AddNewClients()
 
     } while (toupper(AddMore) == 'Y');
 
-    
+
 }
 
 bool DeleteClientByAccountNumber(string AccountNumber, vector <sClient>& vClients)
@@ -508,11 +508,11 @@ void PerformMainMenueOption(enMainMenueOptions MainMenueOption)
         ShowEndScreen();
         break;
 
-        }
-    
+    }
+
 }
 
-void ShowMainMenue() 
+void ShowMainMenue()
 {
     system("cls");
     cout << "===========================================\n";
@@ -535,6 +535,3 @@ int main()
     system("pause>0");
     return 0;
 }
-
-
- 
