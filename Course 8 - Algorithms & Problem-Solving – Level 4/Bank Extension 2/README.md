@@ -57,7 +57,8 @@ Each permission is represented by a specific bit flag:
 
 For a detailed explanation of Bitwise AND (`&`) and OR (`|`) operators, including truth tables and practical examples:
 
-👉 **[View Bitwise Operators Explanation](./Bitwise_explain/)**
+📘 **Deep Dive:** Want to understand how the Bitwise Permission System works under the hood? Check out the full **[Bitwise Operators Explanation & Logic](./Bitwise_explain/)**.
+
 ---
 
 ## 🛠️ Concepts Used
