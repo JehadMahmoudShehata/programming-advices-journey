@@ -22,5 +22,5 @@ Welcome to my repository tracking my progress through the software engineering r
   * 🏦 [Bank System - Advanced Extension 2](./Course%2008%20-%20Algorithms%20%26%20Problem-Solving%20%E2%80%93%20Level%204/Bank%20Extension%202)
 
 * 📂 **Course 10 - OOP as it Should Be**
-  *📚 [String Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/String%20Library%20Project)
-  *📅[Date Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/Date%20Library%20Project)
+  * 📚 [String Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/String%20Library%20Project)
+  * 📅[Date Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/Date%20Library%20Project)
