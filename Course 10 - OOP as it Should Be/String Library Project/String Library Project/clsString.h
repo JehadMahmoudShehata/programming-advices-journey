@@ -49,25 +49,25 @@ public:
 
 	static short CountWords(string S1)
 	{
-		string delim = " "; 
+		string delim = " ";
 		short Counter = 0;
 		short pos = 0;
-		string sWord; 
+		string sWord;
 
-	    while ((pos = S1.find(delim)) != std::string::npos)
-	    {
-				sWord = S1.substr(0, pos); 
-				if (sWord != "")
-				{
-					Counter++;
-				}
-			
-				S1.erase(0, pos + delim.length());
+		while ((pos = S1.find(delim)) != std::string::npos)
+		{
+			sWord = S1.substr(0, pos);
+			if (sWord != "")
+			{
+				Counter++;
+			}
+
+			S1.erase(0, pos + delim.length());
 		}
 
 		if (S1 != "")
 		{
-			Counter++; 
+			Counter++;
 		}
 		return Counter;
 
@@ -94,7 +94,7 @@ public:
 
 	void PrintFirstLetterOfEachWord()
 	{
-	   PrintFirstLetterOfEachWord(_Value);
+		PrintFirstLetterOfEachWord(_Value);
 	}
 
 	static string UpperFirstLetterOfEachWord(string S1)
@@ -110,7 +110,7 @@ public:
 		}
 		return S1;
 	}
-	
+
 	void UpperFirstLetterOfEachWord()
 	{
 		_Value = UpperFirstLetterOfEachWord(_Value);
@@ -176,7 +176,7 @@ public:
 		return S2;
 	}
 
-	void RemovePunctuationsFromString() 
+	void RemovePunctuationsFromString()
 	{
 		_Value = RemovePunctuationsFromString(_Value);
 	}
@@ -336,22 +336,22 @@ public:
 		vector<string> vString;
 
 		short pos = 0;
-		string sWord; 
+		string sWord;
 
 		while ((pos = S1.find(Delim)) != std::string::npos)
 		{
-			sWord = S1.substr(0, pos);    
+			sWord = S1.substr(0, pos);
 			if (sWord != "")
 			{
 				vString.push_back(sWord);
 			}
 
-			S1.erase(0, pos + Delim.length()); 
+			S1.erase(0, pos + Delim.length());
 		}
 
 		if (S1 != "")
 		{
-			vString.push_back(S1); 
+			vString.push_back(S1);
 		}
 
 		return vString;
@@ -460,7 +460,7 @@ public:
 
 		}
 
-		S2 = S2.substr(0, S2.length() - 1); 
+		S2 = S2.substr(0, S2.length() - 1);
 
 		return S2;
 	}
