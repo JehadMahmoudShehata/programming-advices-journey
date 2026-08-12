@@ -13,38 +13,38 @@ private:
 
 public:
 
-	clsPeriod(clsDate StartDate, clsDate EndDate)
+	clsPeriod(const clsDate &StartDate , const clsDate &EndDate)
 	{
 		_StartDate = StartDate;
 		_EndDate = EndDate;
 
 	}
 
-    void SetStartDate(clsDate StartDate)
+    void SetStartDate(const clsDate &StartDate)
     {
         _StartDate = StartDate;
     }
 
-    clsDate GetStartDate()
+    clsDate GetStartDate() const
     {
         return _StartDate;
     }
 
     __declspec(property(get = GetStartDate, put = SetStartDate)) clsDate StartDate;
 
-    void SetEndDate(clsDate EndDate)
+    void SetEndDate(const clsDate &EndDate)
     {
         _EndDate = EndDate;
     }
 
-    clsDate GetEndDate()
+    clsDate GetEndDate() const
     {
         return _EndDate;
     }
 
     __declspec(property(get = GetEndDate, put = SetEndDate)) clsDate EndDate;
 
-    void Print()
+    void Print() const 
     {
         cout << "Period Start: ";
         StartDate.Print();
@@ -62,34 +62,34 @@ public:
 
 
 
-    static bool IsOverlapPeriods(clsPeriod &Period1, clsPeriod &Period2)
+    static bool IsOverlapPeriods(const clsPeriod &Period1, const clsPeriod &Period2)
     {
         return !((clsDate::CompareDates(Period2.EndDate, Period1.StartDate) == clsDate::_enDateCompare::_Before) ||
             (clsDate::CompareDates(Period2.StartDate, Period1.EndDate) == clsDate::_enDateCompare::_After));
     }
 
-    bool IsOverlapPeriods(clsPeriod Period2)
+    bool IsOverlapPeriods(const clsPeriod &Period2) const
     {
         return IsOverlapPeriods(*this, Period2);
     }
 
-    static int GetPeriodLengthInDays(clsPeriod &Period, bool IncludeEndDate = false)
+    static int GetPeriodLengthInDays(const clsPeriod &Period, bool IncludeEndDate = false)
     {
         return clsDate::GetDifferenceInDays(Period.StartDate, Period.EndDate, IncludeEndDate);
     }
 
-    int GetPeriodLengthInDays()
+    int GetPeriodLengthInDays() const
     {
         return GetPeriodLengthInDays(*this);
     }
 
-    static bool IsDateInPeriod(clsPeriod &Period, clsDate &Date)
+    static bool IsDateInPeriod(const clsPeriod &Period, const clsDate &Date) 
     {
         return !(clsDate::CompareDates(Date, Period.StartDate) == clsDate::_enDateCompare::_Before ||
             clsDate::CompareDates(Date, Period.EndDate) == clsDate::_enDateCompare::_After);
     }
 
-    bool IsDateInPeriod(clsDate Date)
+    bool IsDateInPeriod(const clsDate &Date) const
     {
         return IsDateInPeriod(*this, Date);
     }
