@@ -25,3 +25,6 @@ Welcome to my repository tracking my progress through the software engineering r
   * 📚 [String Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/String%20Library%20Project)
   * 📅 [Date Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/Date%20Library%20Project)
   * ⏳ [Period Library Project](./Course%2010%20-%20OOP%20as%20it%20Should%20Be/Period%20library%20project)
+
+* 📂 **Course 11 - OOP as it Should Be level 2**
+  * 🛠️ [Utility Library Project](./Course%2011%20-%20OOP%20as%20it%20Should%20Be%20level%202/Utility%20Library%20Project)
