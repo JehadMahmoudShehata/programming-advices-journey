@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Input & Validation Library", "Input & Validation Library\Input & Validation Library.vcxproj", "{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Debug|x64.ActiveCfg = Debug|x64
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Debug|x64.Build.0 = Debug|x64
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Debug|x86.ActiveCfg = Debug|Win32
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Debug|x86.Build.0 = Debug|Win32
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Release|x64.ActiveCfg = Release|x64
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Release|x64.Build.0 = Release|x64
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Release|x86.ActiveCfg = Release|Win32
+		{CBBBCAB2-6950-4744-9EC0-D4BC9173AB92}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38D13526-9404-4B2C-95F0-5CB9B0774539}
+	EndGlobalSection
+EndGlobal
