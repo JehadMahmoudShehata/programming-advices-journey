@@ -16,12 +16,32 @@ public:
 	{
 	}
 
+	static bool IsNumberBetween(short Numb, short From, short To)
+	{
+		if (From > To)
+		{
+			clsUtility::Swap(From, To);
+
+		}
+		return ((Numb >= From) && (Numb <= To));
+	}
+
 	static bool IsNumberBetween(int Numb,  int From,  int To)
 	{
 		if (From > To)
 		{
 			clsUtility::Swap(From, To);
 			
+		}
+		return ((Numb >= From) && (Numb <= To));
+	}
+
+	static bool IsNumberBetween(float Numb, float From, float To)
+	{
+		if (From > To)
+		{
+			clsUtility::Swap(From, To);
+
 		}
 		return ((Numb >= From) && (Numb <= To));
 	}

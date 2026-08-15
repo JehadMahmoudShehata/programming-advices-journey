@@ -101,9 +101,23 @@ public:
 	//          Swaping 
 	//===================================
 
+	static void Swap(short& A, short& B)
+	{
+		short Temp = A;
+		A = B;
+		B = Temp;
+	}
+
 	static void Swap(int& A, int& B)
 	{
 		int Temp = A;
+		A = B;
+		B = Temp;
+	}
+
+	static void Swap(float& A, float& B)
+	{
+		float Temp = A;
 		A = B;
 		B = Temp;
 	}
