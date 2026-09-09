@@ -117,10 +117,18 @@ private:
             Permissions |= clsUser::enPermissions::pLoginRegister;
         }
 
-        if (Permissions == 255)
+        cout << "\nShow Currency Exchange ? y/n? ";
+        cin >> Answer;
+        if (Answer == 'y' || Answer == 'Y')
+        {
+            Permissions |= clsUser::enPermissions::pCurrencyExchange;
+        }
+
+        if (Permissions == 511)
         {
             return clsUser::enPermissions::eAll;
         }
+
 
         return Permissions;
 

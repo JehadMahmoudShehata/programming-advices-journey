@@ -98,6 +98,11 @@ public:
 
 	static void ShowCurrenciesMain()
 	{
+        if (!CheckAccessRights(clsUser::enPermissions::pCurrencyExchange))
+        {
+            return;
+        }
+
         system("cls");
         _DrawScreenHeader("   Currency Exchange Main Screen ");
 

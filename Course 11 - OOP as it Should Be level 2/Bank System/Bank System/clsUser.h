@@ -199,7 +199,7 @@ public:
 
     enum enPermissions {
         eAll = -1, pListClients = 1, pAddNewClient = 2, pDeleteClient = 4,
-        pUpdateClients = 8, pFindClient = 16, pTransactions = 32, pManageUsers = 64 ,pLoginRegister = 128
+        pUpdateClients = 8, pFindClient = 16, pTransactions = 32, pManageUsers = 64 ,pLoginRegister = 128 , pCurrencyExchange = 256
     };
 
     struct stLoginRegisterRecord 
