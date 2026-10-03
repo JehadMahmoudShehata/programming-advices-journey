@@ -32,4 +32,4 @@ Welcome to my repository tracking my progress through the software engineering r
   * 🏦 [Bank System - OOP Project](./Course%2011%20-%20OOP%20as%20it%20Should%20Be%20level%202/Bank%20System)
 
 * 📂 **Course 13 - Algorithms & Problem Solving Level 5**
-  * 🛠️ [Project 1](./Course 13 - Algorithms & Problem Solving Level 5/Project1)
+  * 🛠️ [Project 1](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project1)
