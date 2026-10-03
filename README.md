@@ -30,3 +30,6 @@ Welcome to my repository tracking my progress through the software engineering r
   * 🛠️ [Utility Library Project](./Course%2011%20-%20OOP%20as%20it%20Should%20Be%20level%202/Utility%20Library%20Project)
   * 🛡️ [Input & Validation Library](./Course%2011%20-%20OOP%20as%20it%20Should%20Be%20level%202/Input%20%26%20Validation%20Library)
   * 🏦 [Bank System - OOP Project](./Course%2011%20-%20OOP%20as%20it%20Should%20Be%20level%202/Bank%20System)
+
+* 📂 **Course 13 - Algorithms & Problem Solving Level 5**
+  * 🛠️ [Project 1](./Course 13 - Algorithms & Problem Solving Level 5/Project1)
