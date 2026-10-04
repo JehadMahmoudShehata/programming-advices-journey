@@ -7,6 +7,10 @@ using namespace std;
 template<class T>
 class clsDblLinkedList
 {
+
+protected:
+
+	int _Size = 0;
 	
 public:
 
@@ -35,7 +39,7 @@ public:
 			Head->Prev = NewNode;
 		}
 		Head = NewNode;
-
+		_Size++;
 	}
 
 	void PrintList()
@@ -87,6 +91,8 @@ public:
 		}
 
 		Current->Next = NewNode;
+		_Size++;
+
 	}
 
 	void InsertAtEnd(T Value)
@@ -111,6 +117,7 @@ public:
 	
 		NewNode->Prev = Current;
 		Current->Next = NewNode;
+		_Size++;
 
 	}
 
@@ -138,6 +145,8 @@ public:
 		}
 
 		delete NodeToDelete;
+		_Size--;
+
 	}
 
 	void DeleteFirstNode()
@@ -155,6 +164,8 @@ public:
 			Head->Prev = nullptr;
 		}
 		delete Temp;
+		_Size--;
+
 	}
 
 	void DeleteLastNode()
@@ -180,6 +191,14 @@ public:
 		Node* Temp = Current->Next;
 		Current->Next = nullptr;
 		delete Temp;
+		_Size--;
+
+	}
+
+	int Size()
+	{
+		return _Size;
+
 	}
 
 

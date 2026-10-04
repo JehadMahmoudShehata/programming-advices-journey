@@ -46,6 +46,24 @@ int main()
     MydblLinkedList.DeleteLastNode();
     MydblLinkedList.PrintList();
 
+    //===========================
+    //    Extension 1 ---> SIZE 
+    //===========================
+
+
+    clsDblLinkedList<int>MydblLinkedList1;
+    MydblLinkedList1.InsertAtBeginning(6);
+    MydblLinkedList1.InsertAtBeginning(5);
+    MydblLinkedList1.InsertAtBeginning(4);
+    MydblLinkedList1.InsertAtBeginning(3);
+    MydblLinkedList1.InsertAtBeginning(2);
+    MydblLinkedList1.InsertAtBeginning(1);
+
+    cout << "\nLinked List Contenet:\n";
+    MydblLinkedList1.PrintList();
+
+    cout << "\nNumber of Iteme in the Linked List: " << MydblLinkedList1.Size();
+
 
     system("pause>0");
     return 0;
