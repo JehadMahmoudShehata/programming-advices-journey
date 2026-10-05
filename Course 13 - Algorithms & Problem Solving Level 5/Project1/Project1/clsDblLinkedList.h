@@ -203,9 +203,17 @@ public:
 
 	bool IsEmpty()
 	{
-		return (_Size == 0 ? true : false);
+		return _Size == 0;
+		//return Head == nullptr;
 	}
 
+	void Clear()
+	{
+		while (!IsEmpty())
+		{
+			DeleteFirstNode();
+		}
+	}
 
 };
 

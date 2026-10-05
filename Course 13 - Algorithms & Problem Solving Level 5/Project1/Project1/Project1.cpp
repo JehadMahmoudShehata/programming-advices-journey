@@ -106,6 +106,28 @@ int main()
     }
 
 
+   //===========================
+   //  Extension 3 ---> Clear 
+   //===========================
+
+    cout << "\n\nExtension 2 ---> Clear";
+
+    clsDblLinkedList<int>MydblLinkedList3;
+    
+    MydblLinkedList3.InsertAtBeginning(4);
+    MydblLinkedList3.InsertAtBeginning(3);
+    MydblLinkedList3.InsertAtBeginning(2);
+    MydblLinkedList3.InsertAtBeginning(1);
+
+    cout << "\nLinked List Contenet:\n";
+    MydblLinkedList3.PrintList();
+
+    cout << "\nNumber of Iteme in the Linked List: " << MydblLinkedList3.Size();
+
+    cout << "\nExecuting .Clear()";
+    MydblLinkedList3.Clear();
+    cout << "\nNumber of Iteme in the Linked List: " << MydblLinkedList3.Size();
+
     system("pause>0");
     return 0;
 }
