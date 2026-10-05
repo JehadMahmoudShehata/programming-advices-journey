@@ -50,8 +50,10 @@ int main()
     //    Extension 1 ---> SIZE 
     //===========================
 
+    cout << "\n\nExtension 1 ---> SIZE\n\n";
 
     clsDblLinkedList<int>MydblLinkedList1;
+
     MydblLinkedList1.InsertAtBeginning(6);
     MydblLinkedList1.InsertAtBeginning(5);
     MydblLinkedList1.InsertAtBeginning(4);
@@ -63,6 +65,45 @@ int main()
     MydblLinkedList1.PrintList();
 
     cout << "\nNumber of Iteme in the Linked List: " << MydblLinkedList1.Size();
+
+    //===========================
+    //  Extension 2 ---> IsEmpty 
+    //===========================
+
+    cout << "\n\nExtension 2 ---> IsEmpty";
+
+    clsDblLinkedList<int>MydblLinkedList2;
+
+    if (MydblLinkedList2.IsEmpty())
+    {
+        cout << "\n\nYes List Is Empty.\n";
+    }
+    else
+    {
+        cout << "\n\nNo List Is NOT Empty.\n";
+    }
+
+    MydblLinkedList2.InsertAtBeginning(7);
+    MydblLinkedList2.InsertAtBeginning(6);
+    MydblLinkedList2.InsertAtBeginning(5);
+    MydblLinkedList2.InsertAtBeginning(4);
+    MydblLinkedList2.InsertAtBeginning(3);
+    MydblLinkedList2.InsertAtBeginning(2);
+    MydblLinkedList2.InsertAtBeginning(1);
+
+    cout << "\nLinked List Contenet:\n";
+    MydblLinkedList2.PrintList();
+
+    cout << "\nNumber of Iteme in the Linked List: " << MydblLinkedList2.Size();
+
+    if (MydblLinkedList2.IsEmpty())
+    {
+        cout << "\n\nYes List Is Empty.\n";
+    }
+    else
+    {
+        cout << "\n\nNo List Is NOT Empty.\n";
+    }
 
 
     system("pause>0");
