@@ -110,7 +110,7 @@ int main()
    //  Extension 3 ---> Clear 
    //===========================
 
-    cout << "\n\nExtension 2 ---> Clear";
+    cout << "\n\nExtension 3 ---> Clear";
 
     clsDblLinkedList<int>MydblLinkedList3;
     
@@ -127,6 +127,29 @@ int main()
     cout << "\nExecuting .Clear()";
     MydblLinkedList3.Clear();
     cout << "\nNumber of Iteme in the Linked List: " << MydblLinkedList3.Size();
+
+
+    //===========================
+    // Extension 4 ---> Reverse 
+    //===========================
+
+    cout << "\n\nExtension 4 ---> Reverse";
+
+    clsDblLinkedList<int>MydblLinkedList4;
+
+    MydblLinkedList4.InsertAtBeginning(5);
+    MydblLinkedList4.InsertAtBeginning(4);
+    MydblLinkedList4.InsertAtBeginning(3);
+    MydblLinkedList4.InsertAtBeginning(2);
+    MydblLinkedList4.InsertAtBeginning(1);
+
+    cout << "\nLinked List Contenet:\n";
+    MydblLinkedList4.PrintList();
+
+    MydblLinkedList4.Reverse();
+
+    cout << "\nLinked List Contenet after reverse:\n";
+    MydblLinkedList4.PrintList();
 
     system("pause>0");
     return 0;
