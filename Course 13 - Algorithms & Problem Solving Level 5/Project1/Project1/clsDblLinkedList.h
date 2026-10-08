@@ -276,5 +276,18 @@ public:
          }*/
 
 	}
+
+	T GetItem(int Item)
+	{
+		Node* ItemNode = GetNode(Item);
+
+		if(ItemNode != nullptr)
+		{
+			return ItemNode->Value;
+		}
+
+    	return T();	
+
+	}
 };
 

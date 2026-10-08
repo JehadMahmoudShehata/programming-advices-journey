@@ -173,7 +173,24 @@ int main()
 
     cout << "\nNode Value is: " << N->Value << endl;
 
+    //=============================
+    // Extension 6 ---> Get Item 
+    //=============================
 
+    cout << "\n\nExtension 6 ---> Get Item";
+
+
+    clsDblLinkedList<int>MydblLinkedList6;
+    MydblLinkedList6.InsertAtBeginning(5);
+    MydblLinkedList6.InsertAtBeginning(4);
+    MydblLinkedList6.InsertAtBeginning(3);
+    MydblLinkedList6.InsertAtBeginning(2);
+    MydblLinkedList6.InsertAtBeginning(1);
+
+    cout << "\nLinked List Content:\n";
+    MydblLinkedList6.PrintList();
+
+    cout << "\nItem(2) Value is: " << MydblLinkedList6.GetItem(2);
 
     system("pause>0");
     return 0;
