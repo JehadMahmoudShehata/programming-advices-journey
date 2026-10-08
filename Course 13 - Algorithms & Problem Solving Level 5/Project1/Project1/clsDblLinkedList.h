@@ -233,5 +233,48 @@ public:
 			Head = Temp->Prev;
 		}
 	}
+
+	Node* GetNode(int index)
+	{
+		//My Solution
+		if (IsEmpty() || index < 0 || index >=_Size)
+		{
+			return nullptr;
+		}
+
+		Node* N = Head;
+
+		for (int i = 0; i < index; i++)
+		{
+			N = N->Next;
+		}
+
+		return N;
+
+		//Doctor Solution
+		/*
+		 Node* GetNode(int Index)
+        {
+
+        int Counter = 0;
+
+        if (Index > _Size - 1 || Index < 0)
+            return NULL;
+
+        Node* Current = head;
+        while (Current != NULL && (Current->next != NULL)) {
+
+            if (Counter == Index)
+                break;
+
+            Current = Current->next;
+            Counter++;
+
+        }
+
+        return Current;
+         }*/
+
+	}
 };
 

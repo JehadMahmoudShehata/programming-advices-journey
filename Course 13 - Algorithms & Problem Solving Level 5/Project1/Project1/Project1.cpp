@@ -151,6 +151,30 @@ int main()
     cout << "\nLinked List Contenet after reverse:\n";
     MydblLinkedList4.PrintList();
 
+    //=============================
+    // Extension 5 ---> Get Node 
+    //=============================
+
+    cout << "\n\nExtension 5 ---> Get Node";
+
+    clsDblLinkedList<int>MydblLinkedList5;
+    MydblLinkedList5.InsertAtBeginning(5);
+    MydblLinkedList5.InsertAtBeginning(4);
+    MydblLinkedList5.InsertAtBeginning(3);
+    MydblLinkedList5.InsertAtBeginning(2);
+    MydblLinkedList5.InsertAtBeginning(1);
+
+    cout << "\nLinked List Content:\n";
+    MydblLinkedList5.PrintList();
+
+    clsDblLinkedList <int>::Node* N;
+        
+    N = MydblLinkedList5.GetNode(2);
+
+    cout << "\nNode Value is: " << N->Value << endl;
+
+
+
     system("pause>0");
     return 0;
 }
