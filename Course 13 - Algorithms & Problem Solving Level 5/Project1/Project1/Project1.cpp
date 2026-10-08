@@ -212,6 +212,28 @@ int main()
     cout << "\nLinked List Content After Updating Item(2):\n";
     MydblLinkedList7.PrintList();
 
+    //===============================================
+    // Extension 8 ---> Insert After overloading
+    //===============================================
+
+    cout << "\n\nExtension 8 ---> Insert After";
+
+    clsDblLinkedList<int>MydblLinkedList8;
+
+    MydblLinkedList8.InsertAtBeginning(5);
+    MydblLinkedList8.InsertAtBeginning(4);
+    MydblLinkedList8.InsertAtBeginning(3);
+    MydblLinkedList8.InsertAtBeginning(2);
+    MydblLinkedList8.InsertAtBeginning(1);
+
+    cout << "\nLinked List Content:\n";
+    MydblLinkedList8.PrintList();
+
+    MydblLinkedList8.InsertAfter(1, 500);
+
+    cout << "\nAfter Insert:\n";
+    MydblLinkedList8.PrintList();
+
 
 
     system("pause>0");

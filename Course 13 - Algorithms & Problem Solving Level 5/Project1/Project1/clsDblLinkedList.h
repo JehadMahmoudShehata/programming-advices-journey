@@ -234,17 +234,17 @@ public:
 		}
 	}
 
-	Node* GetNode(int index)
+	Node* GetNode(int Index)
 	{
 		//My Solution
-		if (IsEmpty() || index < 0 || index >= _Size)
+		if (IsEmpty() || Index < 0 || Index >= _Size)
 		{
 			return nullptr;
 		}
 
 		Node* N = Head;
 
-		for (int i = 0; i < index; i++)
+		for (int i = 0; i < Index; i++)
 		{
 			N = N->Next;
 		}
@@ -302,6 +302,21 @@ public:
 
 		return false;
 		
+
+	}
+
+	//Overloading
+	bool InsertAfter(int Index, T NewValue)
+	{
+		Node* ItemNode = GetNode(Index);
+
+		if (ItemNode != nullptr)
+		{
+			InsertAfter(ItemNode, NewValue);
+			return true;
+		}
+
+		return false;
 
 	}
 
