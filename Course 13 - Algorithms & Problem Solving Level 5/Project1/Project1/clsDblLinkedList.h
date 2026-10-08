@@ -11,7 +11,7 @@ class clsDblLinkedList
 protected:
 
 	int _Size = 0;
-	
+
 public:
 
 	class Node
@@ -60,7 +60,7 @@ public:
 		cout << "\n";
 	}
 
-	Node *Find(T Value)
+	Node* Find(T Value)
 	{
 		Node* Current = Head;
 
@@ -80,7 +80,7 @@ public:
 	void InsertAfter(Node* Current, T Value)
 	{
 		Node* NewNode = new Node();
-		 
+
 		NewNode->Value = Value;
 		NewNode->Next = Current->Next;
 		NewNode->Prev = Current;
@@ -114,7 +114,7 @@ public:
 		{
 			Current = Current->Next;
 		}
-	
+
 		NewNode->Prev = Current;
 		Current->Next = NewNode;
 		_Size++;
@@ -123,7 +123,7 @@ public:
 
 	void DeleteNode(Node*& NodeToDelete)
 	{
-		
+
 		if (Head == nullptr || NodeToDelete == nullptr)
 		{
 			return;
@@ -237,7 +237,7 @@ public:
 	Node* GetNode(int index)
 	{
 		//My Solution
-		if (IsEmpty() || index < 0 || index >=_Size)
+		if (IsEmpty() || index < 0 || index >= _Size)
 		{
 			return nullptr;
 		}
@@ -254,26 +254,26 @@ public:
 		//Doctor Solution
 		/*
 		 Node* GetNode(int Index)
-        {
+		{
 
-        int Counter = 0;
+		int Counter = 0;
 
-        if (Index > _Size - 1 || Index < 0)
-            return NULL;
+		if (Index > _Size - 1 || Index < 0)
+			return NULL;
 
-        Node* Current = head;
-        while (Current != NULL && (Current->next != NULL)) {
+		Node* Current = head;
+		while (Current != NULL && (Current->next != NULL)) {
 
-            if (Counter == Index)
-                break;
+			if (Counter == Index)
+				break;
 
-            Current = Current->next;
-            Counter++;
+			Current = Current->next;
+			Counter++;
 
-        }
+		}
 
-        return Current;
-         }*/
+		return Current;
+		 }*/
 
 	}
 
@@ -281,13 +281,29 @@ public:
 	{
 		Node* ItemNode = GetNode(Item);
 
-		if(ItemNode != nullptr)
+		if (ItemNode != nullptr)
 		{
 			return ItemNode->Value;
 		}
 
-    	return T();	
+		return T();
 
 	}
+
+	bool UpdateItem(int Index, T NewValue)
+	{
+		Node* ItemNode = GetNode(Index);
+
+		if (ItemNode != nullptr)
+		{
+			ItemNode->Value = NewValue;
+			return true;
+		}
+
+		return false;
+		
+
+	}
+
 };
 

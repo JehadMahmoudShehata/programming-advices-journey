@@ -192,6 +192,28 @@ int main()
 
     cout << "\nItem(2) Value is: " << MydblLinkedList6.GetItem(2);
 
+    //=============================
+    // Extension 7 ---> Update Item 
+    //=============================
+
+    cout << "\n\nExtension 7 ---> Update Item";
+
+    clsDblLinkedList<int>MydblLinkedList7;
+    MydblLinkedList7.InsertAtBeginning(5);
+    MydblLinkedList7.InsertAtBeginning(4);
+    MydblLinkedList7.InsertAtBeginning(3);
+    MydblLinkedList7.InsertAtBeginning(2);
+    MydblLinkedList7.InsertAtBeginning(1);
+
+    cout << "\nLinked List Content:\n";
+    MydblLinkedList7.PrintList();
+
+    MydblLinkedList7.UpdateItem(2, 500);
+    cout << "\nLinked List Content After Updating Item(2):\n";
+    MydblLinkedList7.PrintList();
+
+
+
     system("pause>0");
     return 0;
 }
