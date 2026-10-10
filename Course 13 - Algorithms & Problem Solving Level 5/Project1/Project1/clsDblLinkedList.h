@@ -107,6 +107,7 @@ public:
 		{
 			NewNode->Prev = nullptr;
 			Head = NewNode;
+			_Size++;
 			return;
 		}
 
@@ -179,6 +180,7 @@ public:
 		{
 			delete Head;
 			Head = nullptr;
+			_Size--;
 			return;
 		}
 
