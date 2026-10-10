@@ -33,3 +33,4 @@ Welcome to my repository tracking my progress through the software engineering r
 
 * 📂 **Course 13 - Algorithms & Problem Solving Level 5**
   * 🛠️ [Project 1](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project1)
+  * 🛠️ [Project 2 - MyQueue](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project2_MyQueue)

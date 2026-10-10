@@ -1,0 +1,328 @@
+#pragma once
+#include<iostream>
+
+using namespace std;
+
+
+template<class T>
+class clsDblLinkedList
+{
+
+protected:
+
+	int _Size = 0;
+
+public:
+
+	class Node
+	{
+	public:
+
+		T Value;
+		Node* Next;
+		Node* Prev;
+
+	};
+
+	Node* Head = nullptr;
+
+	void InsertAtBeginning(T Value)
+	{
+		Node* NewNode = new Node();
+
+		NewNode->Next = Head;
+		NewNode->Value = Value;
+		NewNode->Prev = nullptr;
+
+		if (Head != nullptr)
+		{
+			Head->Prev = NewNode;
+		}
+
+		Head = NewNode;
+		_Size++;
+	}
+
+	void PrintList()
+	{
+		Node* Current = Head;
+
+		if (Current == nullptr)
+		{
+			cout << "\nLinked List Is Empty\n";
+		}
+
+		while (Current != nullptr)
+		{
+			cout << Current->Value << " ";
+			Current = Current->Next;
+		}
+
+		cout << "\n";
+	}
+
+	Node* Find(T Value)
+	{
+		Node* Current = Head;
+
+		while (Current != nullptr)
+		{
+			if (Current->Value == Value)
+			{
+				return Current;
+			}
+
+			Current = Current->Next;
+		}
+
+		return nullptr;
+	}
+
+	void InsertAfter(Node* Current, T Value)
+	{
+		Node* NewNode = new Node();
+
+		NewNode->Value = Value;
+		NewNode->Next = Current->Next;
+		NewNode->Prev = Current;
+
+		if (Current->Next != nullptr)
+		{
+			Current->Next->Prev = NewNode;
+		}
+
+		Current->Next = NewNode;
+		_Size++;
+
+	}
+
+	void InsertAtEnd(T Value)
+	{
+		Node* Current = Head;
+		Node* NewNode = new Node();
+
+		NewNode->Value = Value;
+		NewNode->Next = nullptr;
+
+		if (Head == nullptr)
+		{
+			NewNode->Prev = nullptr;
+			Head = NewNode;
+			_Size++;
+			return;
+		}
+
+		while (Current->Next != nullptr)
+		{
+			Current = Current->Next;
+		}
+
+		NewNode->Prev = Current;
+		Current->Next = NewNode;
+		_Size++;
+
+	}
+
+	void DeleteNode(Node*& NodeToDelete)
+	{
+
+		if (Head == nullptr || NodeToDelete == nullptr)
+		{
+			return;
+		}
+
+		if (Head == NodeToDelete)
+		{
+			Head = NodeToDelete->Next;
+		}
+
+		if (NodeToDelete->Next != nullptr)
+		{
+			NodeToDelete->Next->Prev = NodeToDelete->Prev;
+		}
+
+		if (NodeToDelete->Prev != nullptr)
+		{
+			NodeToDelete->Prev->Next = NodeToDelete->Next;
+		}
+
+		delete NodeToDelete;
+		_Size--;
+
+	}
+
+	void DeleteFirstNode()
+	{
+		Node* Temp = Head;
+
+		if (Head == nullptr)
+		{
+			return;
+		}
+
+		Head = Head->Next;
+		if (Head != nullptr)
+		{
+			Head->Prev = nullptr;
+		}
+		delete Temp;
+		_Size--;
+
+	}
+
+	void DeleteLastNode()
+	{
+		if (Head == nullptr)
+		{
+			return;
+		}
+
+		if (Head->Next == nullptr)
+		{
+			delete Head;
+			Head = nullptr;
+			_Size--;
+			return;
+		}
+
+		Node* Current = Head;
+		while (Current->Next->Next != nullptr)
+		{
+			Current = Current->Next;
+		}
+
+		Node* Temp = Current->Next;
+		Current->Next = nullptr;
+		delete Temp;
+		_Size--;
+
+	}
+
+	int Size()
+	{
+		return _Size;
+
+	}
+
+	bool IsEmpty()
+	{
+		return _Size == 0;
+		//return Head == nullptr;
+	}
+
+	void Clear()
+	{
+		while (!IsEmpty())
+		{
+			DeleteFirstNode();
+		}
+	}
+
+	void Reverse()
+	{
+		Node* Current = Head;
+		Node* Temp = nullptr;
+
+		while (Current != nullptr)
+		{
+			Temp = Current->Prev;
+			Current->Prev = Current->Next;
+			Current->Next = Temp;
+			Current = Current->Prev;
+		}
+
+		if (Temp != nullptr)
+		{
+			Head = Temp->Prev;
+		}
+	}
+
+	Node* GetNode(int Index)
+	{
+		//My Solution
+		if (IsEmpty() || Index < 0 || Index >= _Size)
+		{
+			return nullptr;
+		}
+
+		Node* N = Head;
+
+		for (int i = 0; i < Index; i++)
+		{
+			N = N->Next;
+		}
+
+		return N;
+
+		//Doctor Solution
+		/*
+		 Node* GetNode(int Index)
+		{
+
+		int Counter = 0;
+
+		if (Index > _Size - 1 || Index < 0)
+			return NULL;
+
+		Node* Current = head;
+		while (Current != NULL && (Current->next != NULL)) {
+
+			if (Counter == Index)
+				break;
+
+			Current = Current->next;
+			Counter++;
+
+		}
+
+		return Current;
+		 }*/
+
+	}
+
+	T GetItem(int Item)
+	{
+		Node* ItemNode = GetNode(Item);
+
+		if (ItemNode != nullptr)
+		{
+			return ItemNode->Value;
+		}
+
+		return T();
+
+	}
+
+	bool UpdateItem(int Index, T NewValue)
+	{
+		Node* ItemNode = GetNode(Index);
+
+		if (ItemNode != nullptr)
+		{
+			ItemNode->Value = NewValue;
+			return true;
+		}
+
+		return false;
+
+
+	}
+
+	//Overloading
+	bool InsertAfter(int Index, T NewValue)
+	{
+		Node* ItemNode = GetNode(Index);
+
+		if (ItemNode != nullptr)
+		{
+			InsertAfter(ItemNode, NewValue);
+			return true;
+		}
+
+		return false;
+
+	}
+
+};
+
+
