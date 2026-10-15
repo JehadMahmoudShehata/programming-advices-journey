@@ -9,6 +9,7 @@ class clsDynamicArray
 protected:
 
 	int _Size = 0;
+	T* _TempArray = nullptr;
 
 public:
 
@@ -59,6 +60,66 @@ public:
 		}
 
 		cout << "\n";
+	}
+
+	void Resize(int NewSize)
+	{
+		//My Solution
+		if (NewSize == Size())
+		{
+			return;
+		}
+
+		if (NewSize <= 0 )
+		{
+			delete[] OriginalArray;
+			OriginalArray = nullptr;
+			_Size = 0;
+			return;
+		}
+
+		_TempArray = new T[NewSize];
+
+		int limit = (NewSize < Size()) ? NewSize : Size();
+		// You Can Use min() function , by including #include<algorithm> lib and just write int Limit = min(Newsize ,_size);
+
+		for (int i = 0; i < limit; i++)
+		{
+			_TempArray[i] = OriginalArray[i];
+		}
+
+		delete[]OriginalArray;
+		_Size = NewSize;
+		OriginalArray = _TempArray;
+
+		//Doctor Solution
+		/*void Resize(int NewSize)
+        {
+       
+        if (NewSize < 0)
+        {
+            NewSize = 0;
+        };
+
+        _TempArray = new T[NewSize];
+
+        //limit the original size to the new size if it is less.
+        if (NewSize < _Size)
+            _Size = NewSize;
+
+        //copy all data from original array until the size
+        for (int i = 0; i < _Size; i++)
+        {
+            _TempArray[i] = OriginalArray[i];
+        }
+
+        _Size = NewSize;
+
+        delete[] OriginalArray;
+        OriginalArray = _TempArray;
+      
+        } */
+
 	}
 
 };

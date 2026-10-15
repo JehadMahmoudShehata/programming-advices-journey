@@ -20,6 +20,17 @@ int main()
 
 	MyDynamicArray.PrintList();
 
+	//Extension 01 --> Resize
+	MyDynamicArray.Resize(2);
+	cout << "\nArray Size : " << MyDynamicArray.Size();
+	cout << "\nArray Items after Resize to 2: \n";
+	MyDynamicArray.PrintList();
+
+	MyDynamicArray.Resize(10);
+	cout << "\nArray Size : " << MyDynamicArray.Size();
+	cout << "\nArray Items after Resize to 10: \n";
+	MyDynamicArray.PrintList();
+
 	system("pause>0");
 	return 0;
 }
