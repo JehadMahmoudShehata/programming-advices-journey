@@ -122,5 +122,79 @@ public:
 
 	}
 
+	T GetItem(int Index)
+	{
+		return OriginalArray[Index];
+	}
+
+	void Reverse()
+	{
+		// My Solution 
+		// Time Complexity O(N/2) / Space Complexity O(1);
+
+		if (IsEmpty())
+		{
+			return;
+		}
+
+		int Start = 0;
+		int End = Size() - 1;
+
+		while (Start < End)
+		{
+			T Temp = OriginalArray[Start];
+			OriginalArray[Start] = OriginalArray[End];
+			OriginalArray[End] = Temp;
+
+			Start++;
+			End--;
+
+		}
+
+		// Doctor Solution
+		//Time Complexity O(N) , Space Complexity O(N)
+
+		/* void  Reverse()
+
+        {
+        _TempArray = new T[_Size];
+        int counter = 0;
+        for (int i = _Size - 1; i >= 0; i--)
+        {
+            _TempArray[counter] = OriginalArray[i];
+            counter++;
+        }
+
+        delete[] OriginalArray;
+        OriginalArray = _TempArray;
+        }*/
+
+	}
+
+	void clear()
+	{
+		//My Solution
+		if (!IsEmpty())
+		{
+			delete[] OriginalArray;
+			OriginalArray = nullptr;
+			_Size = 0;
+
+		}
+		//You Can Reuse Resize() Function , By Writing Resize(0);
+
+
+		//Doctor Solution
+		/*
+		void Clear()
+        {
+	       _Size = 0;
+	       _TempArray = new T[0]; 
+	       delete[] OriginalArray;
+	       OriginalArray = _TempArray;
+
+         }*/
+	}
+
 };
 

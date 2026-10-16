@@ -31,6 +31,43 @@ int main()
 	cout << "\nArray Items after Resize to 10: \n";
 	MyDynamicArray.PrintList();
 
+
+	//Extension 02 -----> GetItem
+
+	clsDynamicArray<int>MyDynamicArray2(6);
+
+	MyDynamicArray2.SetItem(0, 10);
+	MyDynamicArray2.SetItem(1, 20);
+	MyDynamicArray2.SetItem(2, 30);
+	MyDynamicArray2.SetItem(3, 40);
+	MyDynamicArray2.SetItem(4, 50);
+	MyDynamicArray2.SetItem(5, 60);
+
+
+	cout << "\nIs Empty ? " << MyDynamicArray2.IsEmpty();
+	cout << "\nArray Size : " << MyDynamicArray2.Size() << "\n\n";
+	cout << "\nArray Items: \n";
+
+	MyDynamicArray2.PrintList();
+
+	cout << "\nItem(2): " << MyDynamicArray2.GetItem(2) << "\n";
+
+	//Extension 03 -----> Reverse
+	MyDynamicArray2.Reverse();
+
+	cout << "\nArray Items After Reverse: \n";
+	MyDynamicArray2.PrintList();
+
+
+
+	//Extension 04 -----> Clear
+	MyDynamicArray2.clear();
+
+	cout << "\nArray Items After Clear: \n";
+	MyDynamicArray2.PrintList();
+
+
+
 	system("pause>0");
 	return 0;
 }
