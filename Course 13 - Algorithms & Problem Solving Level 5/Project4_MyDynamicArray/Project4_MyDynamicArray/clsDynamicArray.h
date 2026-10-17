@@ -196,5 +196,63 @@ public:
          }*/
 	}
 
+	bool DeleteItemAt(int Index)
+	{
+		//My Solution 
+		// Time Complexity O(N) / Space Complexity O(1);
+
+		if (IsEmpty() || Index < 0 || Index >= Size())
+		{
+			return false;
+		}
+
+		if (Index < Size())
+		{
+			for (int i = Index; i < Size() - 1; i++)
+			{
+				
+				OriginalArray[i] = OriginalArray[i + 1];
+				
+			}
+		}
+
+		Resize(Size() - 1);
+		return true;
+
+		// Doctor Solution
+	    //Time Complexity O(N) , Space Complexity O(N) 
+		/*
+		bool DeleteItemAt(int index)
+        {
+
+           if (index >= _Size || index <0)
+           {
+            return false;
+           }
+
+           _Size--;
+
+            _TempArray = new T[_Size];
+
+          //copy all before index
+
+          for (int i = 0; i < index; i++)
+          {
+            _TempArray[i] = OriginalArray[i];
+          }
+
+        //copy all after index
+          for (int i = index + 1; i < _Size + 1; i++)
+          {
+            _TempArray[i - 1] = OriginalArray[i];
+          }
+
+           delete[] OriginalArray;
+           OriginalArray = _TempArray;
+           return true;
+
+        }*/
+	}
+
 };
 
