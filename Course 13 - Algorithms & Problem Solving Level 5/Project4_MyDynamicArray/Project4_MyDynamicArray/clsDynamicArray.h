@@ -293,6 +293,53 @@ public:
 		return true;
 	}
 
+	bool InserAt(int Index, T Value)
+	{
+
+		if (Index < 0 || Index > Size())
+		{
+			return false;
+		}
+
+		_Size++;
+
+		_TempArray = new T[_Size];
+
+		for (int i = 0; i < Index; i++)
+		{
+			_TempArray[i] = OriginalArray[i];
+		}
+
+		_TempArray[Index] = Value;
+
+		for (int i = Index; i < _Size; i++)
+		{
+			_TempArray[i + 1] = OriginalArray[i];
+		}
+
+		delete[]OriginalArray;
+		OriginalArray = _TempArray;
+		return true;
+
+		//Another Solution
+		/*if (Index < 0 || Index > Size())
+		{
+		   return false;
+		}
+
+		  Resize(_Size + 1);
+
+		for (int i = _Size - 1; i > Index; i--)
+		{
+		   OriginalArray[i] = OriginalArray[i - 1];
+		}
+
+		   OriginalArray[Index] = Value;
+
+		   return true;
+	    }*/
+
+	}
 
 };
 

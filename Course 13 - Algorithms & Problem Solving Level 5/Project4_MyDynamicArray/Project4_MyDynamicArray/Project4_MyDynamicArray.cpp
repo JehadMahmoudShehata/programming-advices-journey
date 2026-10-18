@@ -161,6 +161,30 @@ int main()
 
 	MyDynamicArray5.PrintList();
 
+	//Extension 10 -----> InsertAt
+	cout << "\n\nExtension 10 (InsertAt)";
+
+	clsDynamicArray<int>MyDynamicArray6(5);
+
+	MyDynamicArray6.SetItem(0, 10);
+	MyDynamicArray6.SetItem(1, 20);
+	MyDynamicArray6.SetItem(2, 30);
+	MyDynamicArray6.SetItem(3, 40);
+	MyDynamicArray6.SetItem(4, 50);
+
+	cout << "\nIs Empty ? " << MyDynamicArray6.IsEmpty();
+	cout << "\nArray Size : " << MyDynamicArray6.Size() << "\n\n";
+	cout << "\nArray Items: \n";
+
+	MyDynamicArray6.PrintList();
+
+
+	MyDynamicArray6.InserAt(2, 500);
+	cout << "\nArray  After Insert 500 at Index 2 : \n";
+	cout << "\nArray Size : " << MyDynamicArray6.Size() << "\n";
+
+	MyDynamicArray6.PrintList();
+
 	system("pause>0");
 	return 0;
 }
