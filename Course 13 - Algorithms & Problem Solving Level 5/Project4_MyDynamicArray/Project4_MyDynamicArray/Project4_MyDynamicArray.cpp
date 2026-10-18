@@ -151,6 +151,16 @@ int main()
 		cout << "\n30 is Found at Index : " << Index;
 	}
 
+	//Extension 09 -----> Delete By Value
+	cout << "\n\nExtension 09 (DeleteByValue)";
+
+	MyDynamicArray5.DeleteItemByValue(30);
+
+	cout << "\nArray Items After Deleting 30 : \n";
+	cout << "\nArray Size : " << MyDynamicArray5.Size() << "\n";
+
+	MyDynamicArray5.PrintList();
+
 	system("pause>0");
 	return 0;
 }

@@ -279,6 +279,19 @@ public:
 		return -1;
 	}
 
+	bool DeleteItemByValue(T Value)
+	{
+	
+		int Index = Find(Value);
+
+		if (Index == -1)
+		{
+			return false;
+		}
+
+		DeleteItemAt(Index);
+		return true;
+	}
 
 
 };
