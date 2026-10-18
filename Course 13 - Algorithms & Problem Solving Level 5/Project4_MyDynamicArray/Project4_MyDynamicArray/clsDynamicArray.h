@@ -259,5 +259,11 @@ public:
 		DeleteItemAt(0);
 	}
 
+	void DeleteLastItem()
+	{
+		DeleteItemAt(Size() - 1);
+		//DeleteItemAt(_Size - 1);
+	}
+
 };
 

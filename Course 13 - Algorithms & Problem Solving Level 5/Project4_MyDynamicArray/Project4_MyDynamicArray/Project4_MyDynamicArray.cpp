@@ -115,6 +115,15 @@ int main()
 	cout << "\nArray Size : " << MyDynamicArray4.Size() << "\n";
 	MyDynamicArray4.PrintList();
 
+	//Extension 07 -----> DeleteLastItem
+	cout << "\n\nExtension 07 (DeleteLastItem)";
+
+	MyDynamicArray4.DeleteLastItem();
+
+	cout << "\nArray Items After Deleting LastItem : \n";
+	cout << "\nArray Size : " << MyDynamicArray4.Size() << "\n";
+	MyDynamicArray4.PrintList();
+
 	system("pause>0");
 	return 0;
 }
