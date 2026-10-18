@@ -70,7 +70,6 @@ int main()
 	MyDynamicArray2.PrintList();
 
 	//Extension 05 -----> DeleteItemAtIndex
-
 	cout << "\n\nExtension 05 (DeleteItemAtIndex)";
 
 	clsDynamicArray<int>MyDynamicArray3(5);
@@ -93,7 +92,28 @@ int main()
 	cout << "\nArray Size : " << MyDynamicArray3.Size() << "\n";
 	MyDynamicArray3.PrintList();
 
+	//Extension 06 -----> DeleteFirstItem
+	cout << "\n\nExtension 06 (DeleteFirstItem)";
 
+	clsDynamicArray<int>MyDynamicArray4(5);
+
+	MyDynamicArray4.SetItem(0, 10);
+	MyDynamicArray4.SetItem(1, 20);
+	MyDynamicArray4.SetItem(2, 30);
+	MyDynamicArray4.SetItem(3, 40);
+	MyDynamicArray4.SetItem(4, 50);
+
+	cout << "\nIs Empty ? " << MyDynamicArray4.IsEmpty();
+	cout << "\nArray Size : " << MyDynamicArray4.Size() << "\n\n";
+	cout << "\nArray Items: \n";
+
+	MyDynamicArray4.PrintList();
+
+	MyDynamicArray4.DeleteFirstItem();
+
+	cout << "\nArray Items After Deleting FirstItem : \n";
+	cout << "\nArray Size : " << MyDynamicArray4.Size() << "\n";
+	MyDynamicArray4.PrintList();
 
 	system("pause>0");
 	return 0;
