@@ -124,6 +124,33 @@ int main()
 	cout << "\nArray Size : " << MyDynamicArray4.Size() << "\n";
 	MyDynamicArray4.PrintList();
 
+	//Extension 08 -----> Find By Value
+	cout << "\n\nExtension 08 (FindByValue)";
+
+	clsDynamicArray<int>MyDynamicArray5(5);
+
+	MyDynamicArray5.SetItem(0, 10);
+	MyDynamicArray5.SetItem(1, 20);
+	MyDynamicArray5.SetItem(2, 30);
+	MyDynamicArray5.SetItem(3, 40);
+	MyDynamicArray5.SetItem(4, 50);
+
+	cout << "\nIs Empty ? " << MyDynamicArray5.IsEmpty();
+	cout << "\nArray Size : " << MyDynamicArray5.Size() << "\n\n";
+	cout << "\nArray Items: \n";
+
+	MyDynamicArray5.PrintList();
+
+	int Index = MyDynamicArray5.Find(30);
+	if (Index == -1)
+	{
+		cout << "\nItem Was Not Found =(\n";
+	}
+	else
+	{
+		cout << "\n30 is Found at Index : " << Index;
+	}
+
 	system("pause>0");
 	return 0;
 }

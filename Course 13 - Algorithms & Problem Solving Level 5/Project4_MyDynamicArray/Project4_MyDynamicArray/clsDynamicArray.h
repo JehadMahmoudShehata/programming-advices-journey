@@ -265,5 +265,21 @@ public:
 		//DeleteItemAt(_Size - 1);
 	}
 
+	int Find(T Value)
+	{
+		for (int i = 0; i < Size(); i++)
+		{
+			//or you can write if(OriginalArray[i] == Value)
+			if (GetItem(i) == Value)
+			{
+				return i;
+			}
+		}
+
+		return -1;
+	}
+
+
+
 };
 
