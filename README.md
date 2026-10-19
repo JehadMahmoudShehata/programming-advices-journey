@@ -37,3 +37,4 @@ Welcome to my repository tracking my progress through the software engineering r
   * 🛠️ [Project 3 - MyStack](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project3_MyStack)
   * 🛠️ [Project 4 - MyDynamicArray](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project4_MyDynamicArray)
   * 🛠️ [Project 5 - MyQueueArr](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project5_MyQueueArr)
+  * 🛠️ [Project 5 - MyStackArr](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project6_MyStackArr)
