@@ -39,3 +39,4 @@ Welcome to my repository tracking my progress through the software engineering r
   * 🛠️ [Project 5 - MyQueueArr](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project5_MyQueueArr)
   * 🛠️ [Project 6 - MyStackArr](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project6_MyStackArr)
   * 🛠️ [Project 7 - MyString(Undo/Redo)](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project7_MyString)
+  * 🛠️ [Project 8 - QueueLine)](./Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project8_QueueLine)
