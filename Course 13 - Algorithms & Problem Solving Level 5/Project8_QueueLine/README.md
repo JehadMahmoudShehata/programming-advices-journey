@@ -8,11 +8,11 @@ A C++ implementation of a Customer Queue Line Management system, developed as pa
 
 You can explore different implementation approaches used during the development of this project by switching between the branches:
 
-*   **[Version 1: My Solution (Struct-based Approach)](https://github.com/JehadMahmoudShehata/programming-advices-journey/tree/main)**
+*   **[Version 1: My Solution (Struct-based Approach)](https://github.com/JehadMahmoudShehata/programming-advices-journey/tree/main/Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project8_QueueLine)**
     *   Implemented using standalone `structs` (`stTime`, `stDate`, `_stTicketInfo`) and direct queue management logic.
     *   Focuses on problem-solving, manual array/queue operations, and custom logic for RTL/LTR printing.
 
-*   **[Version 2: Doctor Solution (OOP & Nested Class Approach)](https://github.com/JehadMahmoudShehata/programming-advices-journey/tree/v2-doctor-solution)**[cite: 2]
+*   **[Version 2: Doctor Solution (OOP & Nested Class Approach)](https://github.com/JehadMahmoudShehata/programming-advices-journey/tree/v2-doctor-solution/Course%2013%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project8_QueueLine)**
     *   An advanced Object-Oriented Programming (OOP) refactoring.
     *   Utilizes **Nested Classes** (`clsTicket` inside `clsQueueLine`) to achieve better encapsulation, clean code principles, and separation of concerns.
 
